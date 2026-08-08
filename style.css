@@ -2128,3 +2128,496 @@ footer a:hover {
   }
 
 }
+/* =========================================================
+   FINAL MOBILE POLISH
+   Desktop layout remains unchanged.
+========================================================= */
+
+
+/* TABLET */
+
+@media (max-width: 850px){
+
+  .nav{
+    height:72px;
+    padding:0 5vw;
+  }
+
+  .brand{
+    width:130px;
+    max-width:130px;
+    height:52px;
+  }
+
+  .brand img{
+    width:130px;
+    max-width:130px;
+    height:52px;
+  }
+
+  nav{
+    gap:12px;
+    font-size:12px;
+  }
+
+  /* Hide section navigation on smaller screens */
+  nav a[href="#about"],
+  nav a[href="#services"],
+  nav a[href="#work"]{
+    display:none;
+  }
+
+  /* Keep Contact Us visible if present */
+  nav a[href*="wa.me"]{
+    display:inline-flex;
+    white-space:nowrap;
+  }
+
+  .nav-btn{
+    padding:8px 12px;
+    white-space:nowrap;
+  }
+
+
+  .hero{
+    min-height:auto;
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  /*
+    Keep the approved desktop hero visual hidden
+    on smaller screens so the mobile hero remains
+    clean and focused.
+  */
+  .hero-visual{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:clamp(52px,10vw,78px);
+    line-height:.94;
+  }
+
+  .hero-lead{
+    font-size:16px;
+    max-width:620px;
+    margin:24px 0;
+  }
+
+  .stats{
+    margin-top:42px;
+    gap:30px;
+  }
+
+
+  .statement{
+    padding-top:90px;
+    padding-bottom:90px;
+  }
+
+  .statement h2{
+    font-size:clamp(36px,7vw,58px);
+  }
+
+
+  .section{
+    padding-top:90px;
+    padding-bottom:90px;
+  }
+
+  .section-top{
+    display:block;
+    margin-bottom:38px;
+  }
+
+  .section-top > p{
+    margin-top:18px;
+    max-width:620px;
+  }
+
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .about-copy{
+    font-size:16px;
+  }
+
+
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+
+  .forbes-feature{
+    grid-template-columns:1fr;
+  }
+
+  .forbes-info{
+    padding:10px 0 0;
+  }
+
+
+  .amazon-grid{
+    grid-template-columns:1fr;
+  }
+
+  .amazon-footer{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+
+  .podcast-grid{
+    grid-template-columns:1fr;
+  }
+
+  .link-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .logo-row{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .logo-row span:nth-child(3){
+    border-right:0;
+  }
+
+
+  .experience-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+
+  .contact{
+    grid-template-columns:1fr;
+    gap:45px;
+    padding-top:90px;
+    padding-bottom:90px;
+  }
+
+
+  footer{
+    flex-direction:column;
+    gap:8px;
+  }
+
+}
+
+
+/* PHONE */
+
+@media (max-width: 700px){
+
+  .nav{
+    height:68px;
+    padding:0 5vw;
+  }
+
+  .brand{
+    width:110px;
+    max-width:110px;
+    height:48px;
+  }
+
+  .brand img{
+    width:110px;
+    max-width:110px;
+    height:48px;
+  }
+
+  nav{
+    gap:8px;
+  }
+
+  nav a[href*="wa.me"]{
+    font-size:11px;
+  }
+
+  .nav-btn{
+    padding:8px 11px;
+    font-size:11px;
+  }
+
+
+  .hero{
+    padding-top:65px;
+    padding-bottom:70px;
+  }
+
+  .hero h1{
+    font-size:clamp(48px,14vw,68px);
+  }
+
+  .hero-lead{
+    font-size:15px;
+    line-height:1.55;
+  }
+
+  .hero-actions{
+    gap:9px;
+  }
+
+  .btn{
+    padding:12px 17px;
+    font-size:12px;
+  }
+
+  .stats{
+    gap:25px;
+    margin-top:38px;
+  }
+
+  .stats strong{
+    font-size:23px;
+  }
+
+
+  .statement{
+    padding-top:75px;
+    padding-bottom:75px;
+  }
+
+  .statement h2{
+    font-size:clamp(34px,10vw,52px);
+  }
+
+
+  .section{
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top:75px;
+    padding-bottom:75px;
+  }
+
+  .section h2{
+    font-size:clamp(34px,10vw,52px);
+  }
+
+  .section-intro{
+    font-size:15px;
+  }
+
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .service-grid div{
+    min-height:auto;
+    padding:25px;
+  }
+
+
+  .forbes-info h3{
+    font-size:30px;
+  }
+
+
+  .amazon-grid,
+  .podcast-grid,
+  .link-grid,
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .am-thumb,
+  .pod-card,
+  .feature-card,
+  .link-card,
+  .forbes-video{
+    border-radius:15px;
+  }
+
+
+  .thumb-label{
+    font-size:11px;
+    padding:30px 13px 12px;
+  }
+
+
+  .pod-card > div{
+    padding:20px 21px 23px;
+  }
+
+  .pod-card h3{
+    font-size:22px;
+  }
+
+
+  .link-card{
+    min-height:145px;
+    padding:25px;
+  }
+
+
+  .feature-body{
+    padding:22px;
+  }
+
+  .feature-body h3{
+    font-size:24px;
+  }
+
+
+  .logo-row{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .logo-row span{
+    padding:22px 8px;
+    font-size:12px;
+  }
+
+  .logo-row span:nth-child(odd){
+    border-right:1px solid var(--line);
+  }
+
+  .logo-row span:nth-child(even){
+    border-right:0;
+  }
+
+
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+
+  .experience-grid > div{
+    min-height:auto;
+    padding:25px;
+  }
+
+
+  .contact{
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top:75px;
+    padding-bottom:75px;
+  }
+
+  .contact h2{
+    font-size:clamp(38px,10vw,54px);
+  }
+
+  .contact-card{
+    padding:24px;
+  }
+
+
+  footer{
+    padding:24px 5vw;
+    font-size:10px;
+  }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 420px){
+
+  .nav{
+    padding:0 4vw;
+  }
+
+  .brand{
+    width:92px;
+    max-width:92px;
+  }
+
+  .brand img{
+    width:92px;
+    max-width:92px;
+  }
+
+  nav{
+    gap:6px;
+  }
+
+  nav a[href*="wa.me"]{
+    font-size:10px;
+  }
+
+  .nav-btn{
+    padding:7px 9px;
+    font-size:10px;
+  }
+
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+  }
+
+
+  .stats{
+    gap:20px;
+  }
+
+  .stats strong{
+    font-size:21px;
+  }
+
+  .stats small{
+    font-size:10px;
+  }
+
+
+  .section,
+  .statement,
+  .contact{
+    padding-left:4vw;
+    padding-right:4vw;
+  }
+
+
+  .logo-row span{
+    font-size:11px;
+    padding:20px 5px;
+  }
+
+
+  .contact-card{
+    padding:20px;
+  }
+
+}
+
+
+/* PREVENT HORIZONTAL OVERFLOW */
+
+html,
+body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+}
+
