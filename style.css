@@ -1290,3 +1290,40 @@ a:focus-visible{
   outline:2px solid var(--accent);
   outline-offset:4px;
 }
+/* =========================================================
+   FINAL AMAZON GRID OVERRIDE
+========================================================= */
+
+.amazon-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:18px !important;
+  width:100% !important;
+  margin-top:45px !important;
+  align-items:start !important;
+}
+
+.amazon-grid > *{
+  width:100% !important;
+  min-width:0 !important;
+  grid-column:auto !important;
+}
+
+.am-thumb,
+.am-video{
+  width:100% !important;
+  min-width:0 !important;
+}
+
+@media screen and (min-width:701px){
+  .amazon-grid{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media screen and (max-width:700px){
+  .amazon-grid{
+    grid-template-columns:1fr !important;
+  }
+}
