@@ -1728,3 +1728,124 @@ footer a:hover{
   }
 
 }
+/* =========================================================
+   EDITMONK — FINAL HERO POLISH
+   Keep existing design, logo and portfolio unchanged
+   ========================================================= */
+
+/* Give the hero a little more breathing room horizontally */
+.hero {
+  padding-top: 5vw;
+  padding-bottom: 6vw;
+}
+
+/* Keep the hero content slightly higher and better balanced */
+.hero-inner {
+  align-items: center;
+  gap: 6vw;
+}
+
+/* Slightly larger Forbes featured-work frame */
+.editor-window {
+  width: min(640px, 100%);
+}
+
+/* Keep the featured image/video proportion elegant */
+.preview {
+  min-height: 300px;
+}
+
+/* Featured project title remains readable */
+.hero-visual .featured-title {
+  font-size: 14px;
+}
+
+/* Keep Amazon Music portfolio as a clean 2-column grid */
+.amazon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 45px;
+}
+
+/* Make sure Amazon thumbnails fill their cards */
+.am-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* Prevent images from becoming distorted */
+.am-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero {
+    padding-top: 7vw;
+  }
+
+  .editor-window {
+    width: min(580px, 100%);
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .hero {
+    padding-top: 8vw;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .editor-window {
+    width: min(640px, 100%);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .amazon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-window {
+    width: 100%;
+  }
+
+  .preview {
+    min-height: 220px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .hero {
+    padding-top: 10vw;
+  }
+
+  .editor-window {
+    width: 100%;
+  }
+
+  .preview {
+    min-height: 190px;
+  }
+
+}
